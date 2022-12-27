@@ -3,7 +3,7 @@ services:
     name: YouTube_bot_telegram
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: python BOT.py
+    startCommand: python bot.py
     repo: https://github.com/sholoomail/YouTube_bot_telegram.git
     branch: main
     envVars:
