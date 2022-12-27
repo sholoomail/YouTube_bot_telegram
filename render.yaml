@@ -1,0 +1,15 @@
+services:
+  - type: worker
+    name: YouTube_bot_telegram
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python BOT.py
+    repo: https://github.com/sholoomail/YouTube_bot_telegram.git
+    branch: mai
+    envVars:
+      - key: BOT_TOKEN 
+        sync: false
+      - key: API_ID 
+        sync: false
+      - key: API_HASH 
+        sync: false
